@@ -22,6 +22,7 @@ Rails.application.configure do
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
 
+
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
 
@@ -84,6 +85,7 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
+  config.consider_all_requests_local = true
 
   # Devise mailer configurations
   config.action_mailer.perform_deliveries = true
@@ -93,7 +95,7 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
   address:              'smtp.gmail.com',
   port:                 587,
-  domain:               'example.com',
+  domain:               'morning-island-28657.herokuapp.com',
   user_name:            'i.kamrakov',
   password:             '3698951l',
   authentication:       'plain',
